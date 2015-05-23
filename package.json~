@@ -6,6 +6,7 @@
   "description": "A simple helpful robot for a Hackathon",
   "dependencies": {
     "hubot": "^2.12.0",
+    "hubot-Bible-me": "file:../hubot-bible-me",
     "hubot-diagnostics": "0.0.1",
     "hubot-example": "^1.0.0",
     "hubot-google-images": "^0.1.4",
