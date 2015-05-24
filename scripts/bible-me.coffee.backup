@@ -1,0 +1,18 @@
+# Description:
+#   Hubot return Bible verses
+#
+# Dependencies:
+#   None
+#
+# Commands:
+#   bible me - Return random Bible Verses
+#
+# Author:
+#   markalolo
+
+module.exports = (robot) ->
+  robot.hear /bible me/i, (msg) ->
+
+    msg.http("https://bible-random.herokuapp.com/").get() (err, res, body) ->
+      msg.reply body
+
